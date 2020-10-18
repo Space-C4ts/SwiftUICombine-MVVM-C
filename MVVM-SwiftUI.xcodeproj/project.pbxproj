@@ -156,6 +156,7 @@
 		2A2E2F2A2539FDFE00245AC5 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
+				2A2E2F7F253C565300245AC5 /* Components */,
 				2A2E2F4C253A0E7200245AC5 /* ListView.swift */,
 				2A2E2F51253A0E7E00245AC5 /* ListViewViewModel.swift */,
 				2A2E2F56253A0E8B00245AC5 /* ListViewCoordinator.swift */,
@@ -197,6 +198,13 @@
 				2A2E2F0425398A1C00245AC5 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A2E2F7F253C565300245AC5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

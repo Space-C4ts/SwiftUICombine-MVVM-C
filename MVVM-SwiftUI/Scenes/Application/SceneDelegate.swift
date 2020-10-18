@@ -28,6 +28,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             } receiveValue: { () in
             }.store(in: &cancellables)
         }
-        
     }
 }
