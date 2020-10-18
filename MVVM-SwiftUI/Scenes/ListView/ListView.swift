@@ -17,7 +17,7 @@ struct ListView: View {
     
     var body: some View {
         NavigationView {
-            List(self.array,id: \.self)
+            List(array,id: \.self)
             { item in
                 Text("\(item)")
             }.onAppear(perform: {
