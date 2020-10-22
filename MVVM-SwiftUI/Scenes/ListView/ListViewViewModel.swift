@@ -37,8 +37,6 @@ class ListViewViewModel: ObservableObject, ListViewViewModelParamType, ListViewV
             .sink { [unowned self] datas in
                 array = datas
             }.store(in: &cancellables)
-        
-        getDataTrigger.send(())
     }
     
     //MARK: Input

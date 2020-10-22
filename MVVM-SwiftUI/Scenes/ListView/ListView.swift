@@ -18,6 +18,12 @@ struct ListView: View {
             { item in
                 Text("\(item)")
             }
+            .onAppear() {
+                viewModel
+                    .inputs
+                    .getDataTrigger
+                    .send(())
+            }
             .navigationBarTitle("MVVM-C Example")
         }
     }
