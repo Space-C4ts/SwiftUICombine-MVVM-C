@@ -28,17 +28,17 @@ protocol ListViewViewModelParamType {
 
 class ListViewViewModel: ObservableObject, ListViewViewModelParamType, ListViewViewModelInputs, ListViewViewModelOutputs, ListViewViewModelCoordinates {
     
-    //MARK:
-    
+    @Published var array = [String]()
     private var cancellables: Set<AnyCancellable> = []
     
     public init() {
-        
         getDataTrigger
             .map{ ["item1", "item2", "item3", "item4", "item5"] }
             .sink { [unowned self] datas in
-                self.displayDataTigger.send(datas)
+                array = datas
             }.store(in: &cancellables)
+        
+        getDataTrigger.send(())
     }
     
     //MARK: Input
